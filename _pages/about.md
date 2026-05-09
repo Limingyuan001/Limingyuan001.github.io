@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Mingyuan Li - 李明远"
-description: "Mingyuan Li (李明远) is currently a visiting Ph.D. candidate at Nanyang Technological University (NTU) and a Ph.D. candidate at Northeastern University (NEU). His research focuses on medical AI agents, object detection, and overlapping object perception."
+description: "Mingyuan Li (李明远) is currently a visiting Ph.D. student at Nanyang Technological University (NTU) and a Ph.D. candidate at Northeastern University (NEU). His research focuses on medical AI agents, object detection, and overlapping object perception."
 author_profile: true
 redirect_from:
   - /about/
@@ -11,8 +11,8 @@ redirect_from:
 About Me
 ======
 
-I am currently a visiting Ph.D. candidate in the Lee Kong Chian School of Medicine (LKCMedicine) at Nanyang Technological University (NTU), Singapore, advised by Prof. <a href="https://scholar.google.com/citations?user=fjzIdMQAAAAJ&hl=en">Baosheng Yu</a>.
-I am a Ph.D. candidate in the Master-Ph.D. Combined Program in Control Science and Engineering at Northeastern University, China, advised by Prof. <a href="http://faculty.neu.edu.cn/ise/jiatong/">Tong Jia</a>.
+I am currently a visiting Ph.D. student at the Lee Kong Chian School of Medicine (LKCMedicine), Nanyang Technological University (NTU), Singapore, advised by Prof. <a href="https://scholar.google.com/citations?user=fjzIdMQAAAAJ&hl=en">Baosheng Yu</a>.
+Since 2021, I have been enrolled in the Master-Ph.D. Combined Program in Control Science and Engineering at the College of Information Science and Engineering, Northeastern University, China, where I am advised by Prof. <a href="http://faculty.neu.edu.cn/ise/jiatong/">Tong Jia</a>.
 
 My recent work focuses on artificial intelligence for medicine, applying technologies such as AI agents, agentic AI, and reinforcement learning to multimodal medical data, including images and text. Before this, I mainly studied overlapping object perception methods for autonomous security inspection scenarios, including prohibited item detection, prohibited item segmentation, and pneumonia detection.
 
@@ -58,7 +58,7 @@ Selected Publications
 Education
 ======
 
-* 2021.09-Present: Visiting Ph.D. candidate, Lee Kong Chian School of Medicine, Nanyang Technological University, Singapore. Advisor: Prof. Baosheng Yu.
+* 2021.09-Present: Visiting Ph.D. student, Lee Kong Chian School of Medicine, Nanyang Technological University, Singapore. Advisor: Prof. Baosheng Yu.
 * 2021.09-Present: Master-Ph.D. Combined Program in Control Science and Engineering, Northeastern University, China. Advisor: Prof. Tong Jia.
 * 2017.09-2021.06: B.S. in Automation, Northeastern University, China.
 

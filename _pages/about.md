@@ -1,28 +1,49 @@
 ---
 permalink: /
-title: "Mingyuan Li"
+title: "Mingyuan Li &#124; 李明远"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-Biography
+About Me
 ======
 
 I am a Ph.D. student in the Master-Ph.D. Combined Program in Control Science and Engineering at Northeastern University, China, advised by Prof. Tong Jia. I am also a visiting Ph.D. student in the Lee Kong Chian School of Medicine at Nanyang Technological University, Singapore, advised by Prof. Baosheng Yu.
 
 My research focuses on computer vision and object detection, with recent work on overlapping object perception for real-world visual inspection tasks, including prohibited item detection, prohibited item segmentation, and pneumonia detection.
 
-Research Interests
+{% if site.author.googlescholar %}
+You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+{% endif %}
+
+News
 ======
 
-* Object Detection
-* Transformer-based Detection
-* Contrastive Learning
-* Open-Vocabulary Detection
-* Diffusion Models
-* Overlapping Object Perception
+<details>
+  <summary>2026</summary>
+  <ul>
+    <li>Our recent work on overlapping object perception is under review.</li>
+    <li>I am continuing research on visual inspection and medical AI systems.</li>
+  </ul>
+</details>
+
+<details>
+  <summary>2025</summary>
+  <ul>
+    <li>Several projects on prohibited item detection and segmentation are being updated.</li>
+    <li>New results and preprints will be added to this website soon.</li>
+  </ul>
+</details>
+
+<details>
+  <summary>2024</summary>
+  <ul>
+    <li>Our work on X-ray security inspection and overlapping object detection was expanded.</li>
+    <li>More publication details are available in the All Publications page.</li>
+  </ul>
+</details>
 
 Selected Publications
 ======

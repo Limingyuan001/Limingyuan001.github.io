@@ -9,14 +9,14 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Mingyuan Li | 李明远"
+title                    : "Profile"
 title_separator          : "-"
-name                     : &name "Mingyuan Li"
+name                     : &name "Mingyuan Li | 李明远"
 description              : &description "Mingyuan Li's academic portfolio in AI Agent and Object Detection"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      :  # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : "https://limingyuan001.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : 
+repository               : "Limingyuan001/Limingyuan001.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,11 +24,11 @@ repository               :
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Mingyuan Li"
+  name             : "Mingyuan Li | 李明远"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student working on medical reasoning agents, object detection, and overlapping object perception."
   location         : "Northeastern University, China"
-  employer         : "Northeastern University and Nanyang Technological University"
+  employer         : "Northeastern University and<br>Nanyang Technological University"
   uri              : # URL
   email            : "2310289@stu.neu.edu.cn" 
 

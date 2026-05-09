@@ -249,6 +249,11 @@
    Publication cards
    ========================================================================== */
 
+$publication-image-width: 200px;
+$publication-image-height: 110px;
+$publication-card-gap: 0.9rem;
+$publication-card-width: 100%;
+
 .publication__section-title {
   margin: 1.25em 0 0.75em;
   padding-bottom: 0.35em;
@@ -258,25 +263,27 @@
 .publication-card {
   display: flex;
   align-items: flex-start;
-  gap: 1.1rem;
-  margin: 0 0 1.35rem;
+  gap: $publication-card-gap;
+  width: $publication-card-width;
+  margin: 0 0 1rem;
 }
 
 .publication-card__media {
-  flex: 0 0 185px;
-  width: 185px;
+  flex: 0 0 $publication-image-width;
+  width: $publication-image-width;
 }
 
 .publication-card__media img,
 .publication-card__placeholder {
   display: block;
-  width: 185px;
-  height: 100px;
+  width: $publication-image-width;
+  height: $publication-image-height;
   border-radius: 2px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .publication-card__media img {
+  background: #fff;
   box-shadow: 3px 3px 7px rgba(#000, 0.22);
 }
 
@@ -286,13 +293,15 @@
 }
 
 .publication-card__body {
+  flex: 1 1 0;
   min-width: 0;
+  max-width: none;
 }
 
 .publication-card__title {
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.15rem;
   font-size: $type-size-5;
-  line-height: 1.3;
+  line-height: 1.25;
   font-family: $sans-serif;
 }
 
@@ -304,12 +313,20 @@
   text-decoration: underline;
 }
 
-.publication-card__authors,
-.publication-card__venue,
-.publication-card__links {
-  margin: 0.25rem 0;
+.publication-card .publication-card__authors,
+.publication-card .publication-card__venue,
+.publication-card .publication-card__links {
+  margin: 0;
   font-size: $type-size-6;
-  line-height: 1.45;
+  line-height: 1.32;
+}
+
+.publication-card .publication-card__venue {
+  margin-top: 0.2rem;
+}
+
+.publication-card .publication-card__links {
+  margin-top: 0.3rem;
 }
 
 .publication-card__links a {
@@ -338,7 +355,7 @@
   }
 
   .publication-card__media {
-    width: 185px;
+    width: $publication-image-width;
     margin-bottom: 0.65rem;
   }
 }

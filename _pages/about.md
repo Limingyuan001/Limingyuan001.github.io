@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Mingyuan Li &#124; 李明远"
+description: "Mingyuan Li (李明远) is a Ph.D. student at Northeastern University and a visiting Ph.D. student at Nanyang Technological University. His research focuses on computer vision, object detection, and overlapping object perception."
 author_profile: true
 redirect_from:
   - /about/

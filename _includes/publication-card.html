@@ -1,0 +1,48 @@
+{% include base_path %}
+
+{% assign publication_year = post.date | default: "1900-01-01" | date: "%Y" %}
+{% assign highlighted_authors = post.authors | replace: "Mingyuan Li", "<strong>Mingyuan Li</strong>" %}
+{% assign primary_link = post.paperurl | default: post.arxivurl | default: post.projecturl | default: post.codeurl %}
+{% assign has_links = false %}
+{% if post.paperurl or post.arxivurl or post.codeurl or post.dataseturl or post.projecturl or post.bibtexurl %}
+  {% assign has_links = true %}
+{% endif %}
+
+<article class="publication-card" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <div class="publication-card__media">
+    {% if post.teaser %}
+      <img src="{{ post.teaser | prepend: "/images/" | prepend: base_path }}" alt="{{ post.title | escape }}">
+    {% else %}
+      <div class="publication-card__placeholder" aria-hidden="true"></div>
+    {% endif %}
+  </div>
+
+  <div class="publication-card__body">
+    <h3 class="publication-card__title" itemprop="headline">
+      {% if primary_link %}
+        <a href="{{ primary_link }}">{{ post.title }}</a>
+      {% else %}
+        {{ post.title }}
+      {% endif %}
+    </h3>
+
+    {% if post.authors %}
+      <p class="publication-card__authors">{{ highlighted_authors }}</p>
+    {% endif %}
+
+    <p class="publication-card__venue">
+      <i>{{ post.venue }}</i>, {{ publication_year }}{% if post.status %}. {{ post.status }}{% endif %}
+    </p>
+
+    {% if has_links %}
+      <p class="publication-card__links">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+        {% if post.arxivurl %}<a href="{{ post.arxivurl }}">arXiv</a>{% endif %}
+        {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+        {% if post.dataseturl %}<a href="{{ post.dataseturl }}">Dataset</a>{% endif %}
+        {% if post.projecturl %}<a href="{{ post.projecturl }}">Project</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+      </p>
+    {% endif %}
+  </div>
+</article>
